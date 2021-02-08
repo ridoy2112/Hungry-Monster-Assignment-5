@@ -88,7 +88,7 @@ function mealIngredient(meal) {
         </div>
         <div id="ingredientList">
         <h1 class = "ingredient-title">${meal.strMeal}</h1>
-            <h2 id= "Ingredient">ingredient:</h2>
+            <h2 id= "ingredient">Ingredient:</h2>
             <ul>
             <li>❏${meal.strIngredient1}</li>
             <li>❏${meal.strIngredient2}</li>
