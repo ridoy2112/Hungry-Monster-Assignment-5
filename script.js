@@ -71,19 +71,16 @@ function getMealListByFirstLetter() {
 //JavaScript For Meal Details - Start.
 const mealList = document.getElementById('meal');
 mealList.addEventListener('click', getMealIngredient);
-function getMealIngredient(e) {
-    e.preventDefault();
-    if (e.target.classList.contains('ingredient-btn')) {
-        let mealItem = e.target.parentElement.parentElement;
+function getMealIngredient(maleIngredient) {
+    if (maleIngredient.target.classList.contains('ingredient-btn')) {
+        let mealItem = maleIngredient.target.parentElement.parentElement;
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
             .then(response => response.json())
             .then(data => mealIngredient(data.meals));
     }
 }
 
-
 function mealIngredient(meal) {
-    console.log(meal);
     meal = meal[0];
     let html = `
          <div class = "ingredient-meal-img">
