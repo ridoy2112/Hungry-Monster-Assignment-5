@@ -86,11 +86,21 @@ function mealIngredient(meal) {
          <div class = "ingredient-meal-img">
             <img src = "${meal.strMealThumb}" alt = "">
         </div>
-        <h2 class = "ingredient-title">${meal.strMeal}</h2>
-        
-        <div>
-            <h3>ingredient:</h3>
-            <p>${meal.strInstructions}</p>
+        <div id="ingredientList">
+        <h1 class = "ingredient-title">${meal.strMeal}</h1>
+            <h2 id= "ingredient">ingredient:</h2>
+            <ul>
+            <li>❏${meal.strIngredient1}</li>
+            <li>❏${meal.strIngredient2}</li>
+            <li>❏${meal.strIngredient3}</li>
+            <li>❏${meal.strIngredient4}</li>
+            <li>❏${meal.strIngredient5}</li>
+            <li>❏${meal.strIngredient6}</li>
+            <li>❏${meal.strIngredient7}</li>
+            <li>❏${meal.strIngredient8}</li>
+            <li>❏${meal.strIngredient9}</li>
+            <li>❏${meal.strIngredient10}</li>
+            </ul>
         </div>
     `;
     const mealDetailsContent = document.querySelector('.meal-details-content');

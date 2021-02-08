@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 body{
     font-weight: 300;
     font-size: 17px;
@@ -14,13 +15,16 @@ body{
     outline: 0;
     font-size: 16.8px;
 }
+
 .text{
     opacity: 12.8px;
 }
+
 .title{
     font-size: 32px;
     margin-bottom: 16px;
 }
+
 .meal-wrapper{
     max-width: 1280px;
     margin: 0 auto;
@@ -28,17 +32,21 @@ body{
     background: #fff;
     text-align: center;
 }
+
 .meal-search{
     margin: 32px 0;
 }
+
 .meal-search-box{
     margin: 19px 0;
     display: flex;
 }
+
 .search-control,
 .search-btn{
     width: 100%;
 }
+
 .search-control{
     padding: 0 16px;
     font-size: 17px;
@@ -49,6 +57,7 @@ body{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 .search-btn{
     width: 160px;
     height: 55px;
@@ -59,42 +68,45 @@ body{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .meal-result{
     margin-top: 64px;
 }
+
 #meal{
     margin: 38px 0;
 }
+
 .meal-item{
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
     margin: 32px 0;
+    background-color: #F8F7F5;
 }
+
 .meal-img img{
     width: 100%;
     display: block;
+    
+    
 }
+
 .meal-name{
     padding: 24px 8px;
 }
+
 .meal-name h3{
     font-size: 22px;
 }
 
 .meal-details{
-    position: fixed;
-    top: 20%;
     margin-left:300px ;
     color: black;
-    background-color: blanchedalmond;
     width: 100%;
     height: 100%;
-    overflow: scroll;
     display: none;
-    padding: 32px 0;
-    border: 1px soli tomato;
-    
+    padding: 32px 0; 
 }
 
 .showRecipe{
@@ -110,6 +122,7 @@ body{
     margin-top: 20px;
     padding-bottom: 16px;
 }
+
 .ingredient-meal-img img{
     width: 80%;
     height: 100%;
@@ -117,6 +130,7 @@ body{
     display: block;
    
 }
+
 .notFound{
     color: black;
     font-size: 25px;
@@ -124,22 +138,27 @@ body{
     width: 100%;
     padding-left: 500px;
 }
+
 .meal-search-box{
     width: 540px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .meal-item{
     margin: 0;
 }
+
 .meal-details{
     width: 700px;
 }
+
 #meal{
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(4, 1fr);
 }
+
 .ingredient-btn{
     background-color:tomato;
     font-size: medium;
@@ -149,3 +168,12 @@ body{
     margin-top: 15px;
 }
 
+#ingredient{
+    padding-bottom: 10px;
+}
+
+ul{
+    list-style: none;
+    font-size: 25px;
+    color: dimgray;
+}
